@@ -153,7 +153,7 @@ function agregarMetodoCalculoDescuento (producto) {
   return producto;
 }
 
-// No modificar nada debajo de esta línea               npm config global --location=global user.email "andresore@hotmail.com"
+// No modificar nada debajo de esta línea              
 // --------------------------------
 
 module.exports = {
