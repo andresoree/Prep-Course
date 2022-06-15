@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { forEach } = require("../../07-JS-VI/homework/homework");
+
 function deObjetoAmatriz(objeto){
   // Escribe una función que convierta un objeto en una matriz, donde cada elemento representa 
   // un par clave-valor en forma de matriz.
@@ -10,6 +12,11 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var matriz1=[];
+  for(var clave in objeto){
+    matriz1.push([clave,objeto[clave]]);
+  }
+  return matriz1;
 }
 
 
@@ -18,6 +25,20 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  /*
+  var num=0,abcdario=["a","b","c","d","e","f","g","h","i","j","k", "l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"],array=[],array2=[];
+  for(var i=0;i<string.length;i++){
+    for(var j=0;j<abcdario.length;i++){
+      if(abcdario[i]===string.match(abcdario[j]))
+        num=string.match(abcdario[j]).length;
+    }
+    if(num!==0){
+      array.push(abcdario[i]);
+      array2.push(num);
+      num=0;
+    }
+  return;
+}*/
 }
 
 
